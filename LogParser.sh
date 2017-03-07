@@ -11,7 +11,7 @@ LOG=$2
 #Perform a loop through the file for each line, and output it if possible.
 while read line
 do
-	echo "$line last login time is ==> $(grep "$line" $LOG | tail -n 1)"
+	echo "$line	last login time is ==> $(grep "$line" $LOG | tail -n 1)"
 done < $FILE
 
 exit
